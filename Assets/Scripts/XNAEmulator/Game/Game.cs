@@ -9,6 +9,7 @@ namespace Microsoft.Xna.Framework
 {
     public class Game : IDisposable
 	{
+		private GameComponentCollection _components;
         Content.ContentManager content;
 		GraphicsDevice graphicsDevice;
 		DrawQueue drawQueue;
@@ -43,12 +44,20 @@ namespace Microsoft.Xna.Framework
         {
             content = new ContentManager(null, "");
 			
+			_components = new GameComponentCollection();	
         }
 
         protected virtual void Update(GameTime gameTime)
-        {
-           
+        {  
         }
+		
+		public GameComponentCollection Components
+		{
+			get
+			{
+				return this._components;
+			}
+		}
 
         protected virtual void Draw(GameTime gameTime)
         {
