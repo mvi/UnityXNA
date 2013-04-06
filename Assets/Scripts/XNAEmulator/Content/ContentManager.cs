@@ -88,7 +88,11 @@ namespace Microsoft.Xna.Framework.Content
 			Dictionary<string, string> fontSettings = new Dictionary<string, string>();
 			
 			StringReader stringReader = new StringReader(spriteFontText.text);
-			stringReader.Read(); // Skip the byte order mark - seems to cause Unity issues
+
+#if UNITY_3_0 || UNITY_3_0_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5
+			stringReader.Read(); // Skip the byte order mark on Unity 3.x - note that this seems to work as of Unity 4
+#endif
+			
 			XmlTextReader xmlReader = new XmlTextReader(stringReader);
 			
 			XmlDocument document = new XmlDocument();
