@@ -5,16 +5,16 @@ Proof of concept demo'ing the execution of a 2D XNA game sample in the Unity3D e
 
 Added Feature in This Repository
 ========
-The change made in Visual C# 2010 Express will be reflected in linked Content and XNAGame folder in Unity and vice versa.
+The change made in Visual C# 2010 Express will be reflected on linked Content and XNAGame folder under Unity project and vice versa.
 
 Steps
 ========
-1. You first open Unity project and open Assets/scene.unity file and have Unity upgraded this project.
+1. You first open Assets/scene.unity file via Unity and have Unity upgraded this project.
 2. Select Windows>Layout>Tall so that you can view full screen of XNA plaformer sample game.
 3. Select Edit>Project Settins>Editor and select 2D Default Behavior Mode dropdown in Editor Settings.
 4. Run cmd.exe as Administrator and execute linksource.cmd in the project root folder.
-5. Wait for Unity to load all resouces and scripts
-6. click Play button
+5. Wait for Unity to load all resouces and scripts.
+6. click Play button.
 
 
 Other Info
