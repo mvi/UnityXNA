@@ -3,6 +3,9 @@ UnityXNA
 
 Proof of concept demo'ing the execution of a 2D XNA game sample in the Unity3D engine with zero code changes to game source code.
 
+source site: http://channel9.msdn.com/coding4fun/blog/XNA-and-Unity3D-developers-unite-UnityXNA
+
+
 Added Feature in This Repository
 ========
 The change made in Visual C# 2010 Express will be reflected on linked Content and XNAGame folder under Unity project and vice versa.
